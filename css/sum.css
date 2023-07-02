@@ -1,0 +1,47 @@
+@charset "utf-8";
+.mid{
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.sum{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 1400px;
+    height: 800px;
+    box-shadow: 0 0 15px rgb(83, 103, 110);
+    background: rgba(71, 142, 175, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    margin-left: 45px;
+    animation: load 0.7s linear;
+}
+
+
+.sum .txt{
+    width: 1300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-indent:50px;
+    letter-spacing: 1px;
+    flex-direction: column;
+}
+
+.sum .title{
+    text-indent: 500px;
+}
+
+@keyframes load{
+    0%{
+        background-position-y: 50px;
+        opacity: 0;
+    }
+    100%{
+        background-position-y: 0px;
+        opacity: 1;
+    }
+}
